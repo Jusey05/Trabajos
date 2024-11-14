@@ -14,7 +14,7 @@ public class ProyectoCombinatoria {
             long factorialN = 1, factorialX = 1, factorialY = 1, factorialZ = 1, factorialNR = 1, factorialR = 1, factorialNR1 = 1, factorialN1 = 1;
             
             System.out.print("\nDiga la poblacion: ");
-            n  =sc.nextLong();
+            n  = sc.nextLong();
 
             System.out.print("Diga la muestra: ");
             r = sc.nextLong();
