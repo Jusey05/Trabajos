@@ -60,30 +60,36 @@ public class ProyectoCombinatoria {
                         }
 
                         permutacionRepeticion = factorialN / (factorialX * factorialY * factorialZ);
+
                         System.out.print("La permutacion con repeticion es: "+permutacionRepeticion);   
                     }
                     else{
                         for(int i=1;i<=n;i++){
                             factorialN *= i;   
                         }
+
                         System.out.print("La permutacion sin repeticion es: "+factorialN);
                     }
                 }
-                else if(n!=r){
+                else if(n != r){
                     System.out.println("Si hay repeticion diga 'true', caso de no haber diga 'false': ");
                     seRepite = sc.nextBoolean();
 
                     if(seRepite) {
                         nElevado = (long)(Math.pow(n, r));     
-                        System.out.println("La variacion con repeticion es: "+nElevado);   
+                        System.out.println("La variacion con repeticion es: "+nElevado);
+
                     } else {
                         for(int i = 1; i <= n; i++){
                             factorialN *= i;
                         }
+                        
                         NR = n - r;
+                        
                         for(int i = 1; i <= NR; i++){
                             factorialNR *= i;
                         }
+
                         variacionSinrepeticion = factorialN / factorialNR;
 
                         System.out.println("La variacion sin repeticion es: "+variacionSinrepeticion);

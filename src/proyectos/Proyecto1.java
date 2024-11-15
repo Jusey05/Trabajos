@@ -71,8 +71,7 @@ public class Proyecto1 {
                     System.out.print("La permutacion sin repeticion es: "+factorialN);
                 }     
             }
-        }
-        while( n > 0 || r > 0);
+        } while( n > 0 || r > 0);
 
         sc.close();
     }
